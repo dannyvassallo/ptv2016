@@ -15,8 +15,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
   background-size: cover;
+  opacity: 0.05;
 }
 .stars{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/stars.jpg');
@@ -25,16 +26,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: -2;
   background-repeat: repeat;
+  opacity: 0.05;
 }
 
 .full-w{
   width: 100%;
 }
 .container{
-  // background-color: white;
-  // box-shadow: 0px 0px 50px 60px white;
+  background-color: white;
+  box-shadow: 0px 0px 50px 60px white;
   overflow-x: hidden;
   z-index: 99999999;
 }
@@ -65,6 +67,7 @@ footer:before{
   position: absolute;
   height: 43px;
   margin-top: -43px;
+  z-index: 999999;
 }
 
 h1,h2,h3,h4,h5,h6{
