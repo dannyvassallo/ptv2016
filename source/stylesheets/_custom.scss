@@ -1,4 +1,13 @@
-// PUT CUSTOM SCSS / SASS HERE
+@font-face {
+  font-family: 'Edo';
+  src: url('../fonts/Edo.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Edo.woff') format('woff'),
+  url('../fonts/Edo.ttf')  format('truetype'),
+  url('../fonts/Edo.svg#Edo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .overlay{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/overlay.png');
   position: absolute;
@@ -56,4 +65,8 @@ footer:before{
   position: absolute;
   height: 43px;
   margin-top: -43px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Edo';
 }
