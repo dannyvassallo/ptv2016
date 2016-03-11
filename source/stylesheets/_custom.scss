@@ -69,4 +69,30 @@ footer:before{
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Edo';
+  color: #e93535 !important;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.cta{
+  margin-top: -6%;
+}
+
+@media (max-width: 600px){
+  .cta{
+    margin-top: -4%;
+  }
+}
+
+@media (max-width: 600px){
+  .cta{
+    h2{
+      font-size: 40px;
+    }
+    h5{
+      font-size: 20px;
+    }
+  }
 }
