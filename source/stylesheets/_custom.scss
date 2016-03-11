@@ -1,1 +1,59 @@
 // PUT CUSTOM SCSS / SASS HERE
+.overlay{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/overlay.png');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-size: cover;
+}
+.stars{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/stars.jpg');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-repeat: repeat;
+}
+
+.full-w{
+  width: 100%;
+}
+.container{
+  // background-color: white;
+  // box-shadow: 0px 0px 50px 60px white;
+  overflow-x: hidden;
+  z-index: 99999999;
+}
+.logo{
+  margin-top: -40%;
+}
+.video{
+  box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.5);
+  padding: 20px !important;
+  margin-top: -35% !important;
+  background-color: white;
+}
+.gradient{
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+footer, footer a, footer h5, footer p, .footer-copyright{
+  color: #e93535 !important;
+}
+
+footer:before{
+  width: 100%;
+  content: " ";
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/footerline.png');
+  position: absolute;
+  height: 43px;
+  margin-top: -43px;
+}
