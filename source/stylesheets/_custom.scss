@@ -17,7 +17,7 @@
   right: 0;
   z-index: -1;
   background-size: cover;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 .stars{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/stars.jpg');
@@ -28,7 +28,7 @@
   right: 0;
   z-index: -2;
   background-repeat: repeat;
-  opacity: 0.05;
+  opacity: 0.2;
 }
 
 .full-w{
@@ -109,3 +109,47 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
+
+.ptv-red,
+.ptv-red:hover,
+.ptv-red:active,
+.ptv-red:focus{
+  background-color: #e93535;
+}
+
+.ptv-red-text{
+  color: #e93535;
+}
+
+.disc{
+  font-size: 10px;
+}
+
+
+/* label color */
+ .input-field label {
+   color: #cecece;
+ }
+ /* label focus color */
+ .input-field input[type=email]:focus + label {
+   color: #cecece;
+ }
+ /* label underline focus color */
+ .input-field input[type=email]:focus {
+   border-bottom: 1px solid #cecece;
+   box-shadow: 0 1px 0 0 #cecece;
+ }
+ /* valid color */
+ .input-field input[type=email].valid {
+   border-bottom: 1px solid #cecece;
+   box-shadow: 0 1px 0 0 #cecece;
+ }
+ /* invalid color */
+ .input-field input[type=email].invalid {
+   border-bottom: 1px solid #cecece;
+   box-shadow: 0 1px 0 0 #cecece;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #cecece;
+ }
