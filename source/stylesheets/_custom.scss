@@ -43,11 +43,11 @@ main .container{
 }
 .logo{
   margin-top: -40%;
+  margin-bottom: -35%;
 }
 .video{
   box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.5);
   padding: 10px !important;
-  margin-top: -35% !important;
   background-color: white;
 }
 .gradient{
@@ -90,12 +90,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .cta{
-  margin-top: -6%;
+  margin-top: 6%;
 }
 
 @media (max-width: 600px){
-  .cta{
-    margin-top: -4%;
+  .logo{
+    margin-bottom: -45%;
   }
 }
 
@@ -160,4 +160,22 @@ span.error{
 
 div.toast.red{
   z-index: 99999999999999999999999 !important;
+}
+
+.album-info{
+  z-index: 9999999999 !important;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.newalbumpic{
+  transform: rotate(5deg);
+}
+
+.titlepic{
+  transform: rotate(-5deg);
+}
+
+.datepic{
+  transform: rotate(3deg);
 }

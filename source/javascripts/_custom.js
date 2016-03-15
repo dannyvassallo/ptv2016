@@ -7,12 +7,25 @@ function resizeGradient(){
   gradient.css('margin-top',cssMargin);
 }
 
+function resizeReleaseDate(){
+  var naH = $('.newalbum').height();
+  var rd = $('.releasedate');
+  rd.height(naH);
+}
+
 $(function(){
   resizeGradient();
+  resizeReleaseDate();
+  $("#ytEmbed").on("load", function () {
+      resizeReleaseDate();
+  });
 });
 
 $(window).resize(function(){
-  resizeGradient();
+  setTimeout(function(){
+    resizeGradient();
+    resizeReleaseDate();
+  }, 500);
 });
 
 // iterate through errors and growl them
