@@ -22,7 +22,7 @@
 
 .overlay{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/overlay.png');
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -33,7 +33,7 @@
 }
 .stars{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/stars.jpg');
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
