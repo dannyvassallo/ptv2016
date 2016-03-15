@@ -1,3 +1,6 @@
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-75121574-1'
+end
 ###
 # Page options, layouts, aliases and proxies
 ###
