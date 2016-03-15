@@ -9,14 +9,16 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman" %></title>
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <%= partial 'partials/meta-seo' %>
     <%= stylesheet_link_tag :site %>
+    <%= google_analytics_tag %>
   </head>
 
   <body class="<%= page_classes %>">
     <main>
       <!-- CONTENT SHOWS HERE -->
       <%= yield %>
+      <div class="overlay"></div>
+      <div class="stars"></div>
     </main>
     <%= partial 'layouts/partials/footer' %>
     <%= javascript_include_tag :all %>

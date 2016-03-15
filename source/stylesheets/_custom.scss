@@ -8,9 +8,21 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'special_eliteregular';
+    src: url('../fonts/specialelite-webfont.eot');
+    src: url('../fonts/specialelite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/specialelite-webfont.woff2') format('woff2'),
+         url('../fonts/specialelite-webfont.woff') format('woff'),
+         url('../fonts/specialelite-webfont.ttf') format('truetype'),
+         url('../fonts/specialelite-webfont.svg#special_eliteregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .overlay{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/overlay.png');
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -21,7 +33,7 @@
 }
 .stars{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/stars.jpg');
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -43,11 +55,11 @@ main .container{
 }
 .logo{
   margin-top: -40%;
+  margin-bottom: -35%;
 }
 .video{
   box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.5);
   padding: 10px !important;
-  margin-top: -35% !important;
   background-color: white;
 }
 .gradient{
@@ -81,7 +93,7 @@ footer.page-footer .footer-copyright{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Edo';
+  font-family: 'special_eliteregular';
   color: #e93535 !important;
 }
 
@@ -90,22 +102,28 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .cta{
-  margin-top: -6%;
+  margin-top: 6%;
 }
 
 @media (max-width: 600px){
-  .cta{
-    margin-top: -4%;
+  .logo{
+    margin-bottom: -45%;
+  }
+}
+
+@media (min-width: 992px){
+  .logo{
+    margin-bottom: -48%;
   }
 }
 
 @media (max-width: 600px){
   .cta{
     h2{
-      font-size: 40px;
+      font-size: 36px;
     }
     h5{
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 }
@@ -160,4 +178,22 @@ span.error{
 
 div.toast.red{
   z-index: 99999999999999999999999 !important;
+}
+
+.album-info{
+  z-index: 9999999999 !important;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.newalbumpic{
+  transform: rotate(5deg);
+}
+
+.titlepic{
+  transform: rotate(-5deg);
+}
+
+.datepic{
+  transform: rotate(3deg);
 }
