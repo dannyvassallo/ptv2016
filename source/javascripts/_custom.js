@@ -1,40 +1,10 @@
-function resizeGradient(){
-  var videoH = $('.video').height();
-  var gradient = $('.gradient');
-  gradient.height(videoH);
-  var newMargin = videoH - 5;
-  var cssMargin = "-"+newMargin+"px";
-  gradient.css('margin-top',cssMargin);
-}
-
-function resizeReleaseDate(){
-  var naH = $('.newalbum').height();
-  var rd = $('.releasedate');
-  rd.height(naH);
-}
-
-$(function(){
-  resizeGradient();
-  resizeReleaseDate();
-  $("#ytEmbed").on("load", function () {
-      resizeReleaseDate();
-  });
-});
-
-$(window).resize(function(){
-  setTimeout(function(){
-    resizeGradient();
-    resizeReleaseDate();
-  }, 500);
-});
-
 // iterate through errors and growl them
 function toasts(){
   setTimeout(function(){
     $('span.error').each(function(){
       if($(this).html() != ""){
         var errorText = $(this).text();
-        Materialize.toast(errorText, 4000, 'red');
+        Materialize.toast(errorText, 5000, 'red');
       }
     });
   }, 100);
@@ -92,4 +62,33 @@ $(function(){
   $('form label').on('click', function(){
     $(this).prev('input').focus();
   });
+  tornPaperMarginR();
+  tornPaperMarginL();
 });
+
+$(window).resize(function(){
+  tornPaperMarginR();
+  tornPaperMarginL();
+});
+
+function tornPaperMarginR(){
+  var screenW = $(window).width(),
+  elWidth = $('.torn-paper').width(),
+  margin = ((screenW / 2) - elWidth)+ 80;
+  $('.torn-paper').css('right', margin);
+}
+
+function tornPaperMarginL(){
+  var screenW = $(window).width(),
+  elWidth = $('.torn-paper-l').width(),
+  albumImage = $('.album-img').width();
+  if(screenW < 1335){
+    diff = 0;
+  }else if(screenW < 1670){
+    diff = 80;
+  }else{
+    diff = 150;
+  }
+  margin = (((screenW / 2) - elWidth)- diff) - (albumImage / 2);
+  $('.torn-paper-l').css('left', margin);
+}
