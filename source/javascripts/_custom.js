@@ -4,7 +4,7 @@ function toasts(){
     $('span.error').each(function(){
       if($(this).html() != ""){
         var errorText = $(this).text();
-        Materialize.toast(errorText, 4000, 'red');
+        Materialize.toast(errorText, 1000000, 'red');
       }
     });
   }, 100);
