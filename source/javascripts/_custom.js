@@ -76,6 +76,7 @@ function tornPaperMarginR(){
   elWidth = $('.torn-paper').width(),
   margin = ((screenW / 2) - elWidth)+ 80;
   $('.torn-paper').css('right', margin);
+  $('.torn-paper').height($('body').height());
 }
 
 function tornPaperMarginL(){
@@ -83,12 +84,13 @@ function tornPaperMarginL(){
   elWidth = $('.torn-paper-l').width(),
   albumImage = $('.album-img').width();
   if(screenW < 1335){
-    diff = 0;
+    diff = 50;
   }else if(screenW < 1670){
-    diff = 80;
+    diff = 70;
   }else{
     diff = 150;
   }
   margin = (((screenW / 2) - elWidth)- diff) - (albumImage / 2);
   $('.torn-paper-l').css('left', margin);
+  $('.torn-paper-l').height($('body').height());
 }

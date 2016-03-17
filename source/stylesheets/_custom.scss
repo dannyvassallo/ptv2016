@@ -71,8 +71,9 @@ footer:before{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/tornred.png');
   position: absolute;
   height: 230px;
-  margin-top: -137px;
+  margin-top: -112px;
   z-index: 99999999;
+  background-position: left;
 }
 
 
@@ -174,6 +175,7 @@ div.toast.red{
 .video{
   position: relative;
   z-index: 999;
+  margin-left: -80px !important;
 }
 
 .new-album{
@@ -200,6 +202,12 @@ div.toast.red{
   }
   .new-album{
     margin-top: 20%;
+  }
+  .torn-paper-l{
+    display: none;
+  }
+  .video{
+    margin-left: auto !important;
   }
 }
 
@@ -249,3 +257,4 @@ div.toast.red{
   border: 2px solid white;
   font-size: 30px;
 }
+
