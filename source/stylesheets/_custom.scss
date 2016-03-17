@@ -109,6 +109,27 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+@media (max-width: 1400px){
+  .album-img{
+    width: 170%;
+    margin-left: -60%;
+  }
+}
+
+@media (max-width: 991px){
+  .album-img{
+    width: 170%;
+    margin-left: -48%;
+  }
+}
+
+@media (max-width: 696px){
+  .album-img{
+    width: 190%;
+    margin-left: -58%;
+  }
+}
+
 @media (max-width: 600px){
   .cta{
     h2{
@@ -117,6 +138,10 @@ h1,h2,h3,h4,h5,h6{
     h5{
       font-size: 14px;
     }
+  }
+  .album-img{
+    width: 100%;
+    margin-left: 0;
   }
 }
 
