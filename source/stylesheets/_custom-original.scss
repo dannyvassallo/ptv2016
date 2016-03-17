@@ -1,4 +1,14 @@
 @font-face {
+  font-family: 'Edo';
+  src: url('../fonts/Edo.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Edo.woff') format('woff'),
+  url('../fonts/Edo.ttf')  format('truetype'),
+  url('../fonts/Edo.svg#Edo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
     font-family: 'special_eliteregular';
     src: url('../fonts/specialelite-webfont.eot');
     src: url('../fonts/specialelite-webfont.eot?#iefix') format('embedded-opentype'),
@@ -10,55 +20,53 @@
     font-style: normal;
 }
 
-body{
-  overflow-x: hidden;
+.overlay{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/overlay.png');
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0.1;
+}
+.stars{
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/stars.jpg');
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  background-repeat: repeat;
+  opacity: 0.2;
 }
 
 .full-w{
   width: 100%;
 }
-
-.album-img{
-  width: 120%;
-  margin-left: -20%;
-}
-
-main{
+main .container{
+  background-color: white;
+  box-shadow: 0px 0px 50px 60px white;
   // overflow-x: hidden;
-  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/repeatingpaper.jpg');
-  background-repeat: repeat;
-}
-
-.torn-paper{
-  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/tornpaper.png');
-  background-repeat: repeat-y;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 745px;
-  height: 100%;
-  z-index: 0;
-}
-
-
-.torn-paper-l{
-  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/tornpaperL.png');
-  background-repeat: repeat-y;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 745px;
-  height: 100%;
-  z-index: 0;
-}
-
-footer{
-  position: relative;
+  padding-bottom: 100px;
   z-index: 99999999;
-  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/repeatingredpaper.jpg');
-  background-repeat: repeat;
+}
+.logo{
+  margin-top: -40%;
+  margin-bottom: -35%;
+}
+.video{
+  box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.5);
+  padding: 10px !important;
+  background-color: white;
+}
+.gradient{
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 footer, footer a, footer h5, footer p, .footer-copyright{
@@ -68,17 +76,14 @@ footer, footer a, footer h5, footer p, .footer-copyright{
 footer:before{
   width: 100%;
   content: " ";
-  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/tornred.png');
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/footerline.png');
   position: absolute;
-  height: 230px;
-  margin-top: -137px;
-  z-index: 99999999;
+  height: 100px;
+  margin-top: -100px;
+  z-index: 9;
 }
 
 
-footer.page-footer{
-  margin-top: 0;
-}
 footer.page-footer .footer-copyright{
   background-color: #e93535;
   color: white !important;
@@ -101,11 +106,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 @media (max-width: 600px){
+  .logo{
+    margin-bottom: -45%;
+  }
 }
 
-@media (max-width: 992px){
-  .torn-paper-l{
-    display: none;
+@media (min-width: 992px){
+  .logo{
+    margin-bottom: -48%;
   }
 }
 
@@ -135,10 +143,6 @@ h1,h2,h3,h4,h5,h6{
   font-size: 10px;
 }
 
-.video-container{
-  overflow: visible;
-  margin-top: 10%;
-}
 
 /* label color */
  .input-field label {
@@ -182,13 +186,14 @@ div.toast.red{
   margin-bottom: 0;
 }
 
-.video-bg{
-  width: 120%;
-  margin-left: -10%;
-  margin-top: -10%;
+.newalbumpic{
+  transform: rotate(5deg);
 }
 
-.video{
-  position: relative;
-  z-index: 1;
+.titlepic{
+  transform: rotate(-5deg);
+}
+
+.datepic{
+  transform: rotate(3deg);
 }
