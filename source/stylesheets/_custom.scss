@@ -183,18 +183,9 @@ div.toast.red{
 .new-album{
   z-index: 999999;
   position: relative;
-  max-width: 500px;
+  // max-width: 500px;
   margin: 0 auto;
   width: 100%;
-}
-
-@media (max-width: 600px){
-}
-
-@media (max-width: 992px){
-  .torn-paper-l{
-    display: none;
-  }
 }
 
 @media (max-width: 1400px){
@@ -208,8 +199,23 @@ div.toast.red{
   .torn-paper-l{
     display: none;
   }
-  .video{
-    margin-left: auto !important;
+  .new-album{
+    width: 150%;
+  }
+  .video-bg{
+    width: 150%;
+  }
+  #ytEmbed{
+    width: 125%;
+    height: 120%;
+    margin-top: 16px;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width: 992px){
+  .torn-paper-l{
+    display: none;
   }
 }
 
@@ -236,6 +242,12 @@ div.toast.red{
       font-size: 14px;
     }
   }
+  #ytEmbed{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
   .album-img{
     width: 120%;
     margin-left: -9%;
@@ -243,6 +255,7 @@ div.toast.red{
   .new-album{
     margin-top: 0;
     margin-bottom: 80px !important;
+    width: 100%;
   }
   .video-bg{
     width: 125%;
@@ -251,6 +264,9 @@ div.toast.red{
   }
   .video-container{
     margin-top: -20%;
+  }
+  .video{
+    margin-left: auto !important;
   }
 }
 
