@@ -279,3 +279,17 @@ div.toast.red{
 input[type=email]{
   color: white !important;
 }
+
+[type="checkbox"].filled-in:checked + label:before {
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid white;
+  background-color: white;
+}
+
+[type="checkbox"].filled-in:not(:checked) + label:after {
+  border: 2px solid white;
+}
