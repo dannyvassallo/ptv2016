@@ -94,3 +94,16 @@ function tornPaperMarginL(){
   $('.torn-paper-l').css('left', margin);
   $('.torn-paper-l').height($('body').height());
 }
+
+var regEmailAction = "https://docs.google.com/a/trendsettermarketing.net/forms/d/1cnCJZ5PssQxDzCihYcHQJj2LRd3B_QcwCLzZ8CPBATI/formResponse";
+var streetTeamAction = "https://docs.google.com/a/trendsettermarketing.net/forms/d/1QxqmwU2hgPZgyDqLSHr_URKNoaE-mhCOPRjojr8FeGc/formResponse";
+
+$(function(){
+  $("#street-team").change(function() {
+    if($(this).prop('checked') !== true){
+      $("#email-form").attr("action", regEmailAction);
+    } else {
+      $("#email-form").attr("action", streetTeamAction);
+    }
+  });
+});
