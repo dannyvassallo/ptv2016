@@ -315,3 +315,11 @@ input[type=email]{
 .margin-top{
   margin-top: 2% !important;
 }
+
+.paper-tear{
+  width: 100%;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/tornred.png');
+  position: absolute;
+  height: 230px;
+  z-index: -1;
+}
