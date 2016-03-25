@@ -10,6 +10,15 @@
     font-style: normal;
 }
 
+nav{
+  background-color: #e93535;
+  z-index: 9999999;
+  position: relative;
+  .nav-wrapper a{
+    font-size: 20px;
+  }
+}
+
 body{
   overflow-x: hidden;
   font-family: 'special_eliteregular';
