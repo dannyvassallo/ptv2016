@@ -107,3 +107,28 @@ $(function(){
     }
   });
 });
+
+$(function(){
+  // link to tumblr
+  $('main').on('click', function(e){
+    window.open('http://piercetheveil.tumblr.com/', '_blank');
+    return false;
+  });
+  $('.footer-wrap').on('click', function(e){
+    window.open('http://piercetheveil.tumblr.com/', '_blank');
+    return false;
+  });
+  // link to itunes
+  $('.album-art').on('click', function(e){
+    window.open('http://smarturl.it/misadventuresbundles', '_blank');
+    return false;
+  });
+  $('.bundle').on('click', function(e){
+    window.open('http://smarturl.it/misadventuresbundles', '_blank');
+    return false;
+  });
+  // ignore clicks
+  // $('form').on('click', function(e){
+  //   return false;
+  // });
+});
