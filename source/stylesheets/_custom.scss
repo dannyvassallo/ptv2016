@@ -23,6 +23,8 @@ body{
   overflow-x: hidden;
   font-family: 'special_eliteregular';
   background-color: #e93535;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/repeatingpaper.jpg');
+  background-repeat: repeat;
 }
 
 .full-w{
@@ -83,7 +85,7 @@ footer:before{
   position: absolute;
   height: 230px;
   margin-top: -112px;
-  z-index: 99999999;
+  z-index: 1;
   background-position: left;
 }
 
@@ -110,9 +112,9 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
-.cta{
-  margin-top: 6%;
-}
+// .cta{
+//   margin-top: 6%;
+// }
 
 .ptv-red,
 .ptv-red:hover,
@@ -334,5 +336,16 @@ input[type=email]{
 }
 
 .margin-super-top{
-  margin-top: 5%;
+  margin-top: 10%;
+}
+
+.album-art{
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.header {
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
