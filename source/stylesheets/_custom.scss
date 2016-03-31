@@ -89,6 +89,12 @@ footer:before{
   background-position: left;
 }
 
+footer{
+  .container{
+    z-index: 9999;
+    position: relative;
+  }
+}
 
 footer.page-footer{
   margin-top: 0;
@@ -113,7 +119,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 // .cta{
-//   margin-top: 6%;
+//   border: solid 5px white;
 // }
 
 .ptv-red,
@@ -133,7 +139,7 @@ h1,h2,h3,h4,h5,h6{
 
 .video-container{
   overflow: visible;
-  margin-top: 10%;
+  // margin-top: 10%;
 }
 
 /* label color */
@@ -186,9 +192,10 @@ div.toast.red{
 }
 
 .video{
-  position: relative;
+  // position: relative;
   z-index: 999;
-  margin-left: -80px !important;
+  margin-top: 6%;
+  margin-bottom: 23%;
 }
 
 .new-album{
@@ -215,12 +222,20 @@ div.toast.red{
   }
   .video-bg{
     width: 150%;
+    margin-left: -25%;
+    margin-top: -12%;
   }
   #ytEmbed{
     width: 125%;
     height: 120%;
-    margin-top: 16px;
-    margin-left: 7px;
+    margin-left: -13%;
+    margin-top: 3%;
+  }
+}
+
+@media (min-width: 1400px){
+  .video{
+    margin-bottom: 11%;
   }
 }
 
@@ -285,8 +300,16 @@ div.toast.red{
     margin-top: -20%;
   }
   .video{
-    margin-left: auto !important;
+    margin-top: 30%;
+    margin-bottom: 11%;
   }
+  .ptv-btn{
+    font-size: 20px !important;
+  }
+}
+
+.ptv-btn{
+  margin-bottom: 10%;
 }
 
 .btn{
@@ -347,5 +370,6 @@ input[type=email]{
 
 .header {
   margin-top: 2%;
-  margin-bottom: 3%;
+  margin-bottom: 70px;
 }
+
